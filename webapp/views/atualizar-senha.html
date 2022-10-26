@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBook - Atualização de Senha</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+</head>
+<body>
+    {{ template "cabecalho" }}
+
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-12">
+                <h3>Atualização de Senha</h3>
+                <form id="atualizar-senha">
+                    <div class="form-group">
+                        <label for="senha-atual">Senha Atual</label>
+                        <input type="password" name="senha-atual" id="senha-atual" class="form-control" placeholder="Insira a sua senha atual" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="nova-senha">Nova Senha</label>
+                        <input type="password" name="nova-senha" id="nova-senha" class="form-control" placeholder="Insira a sua senha nova" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmar-senha">Confirmar Senha</label>
+                        <input type="password" name="confirmar-senha" id="confirmar-senha" class="form-control" placeholder="Confirme a sua senha nova" required="required">
+                    </div>
+                    <button type="submit" class="btn btn-info">
+                        Atualizar Senha
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    {{ template "rodape" }}
+    {{ template "scripts" }}
+
+    <script src="/assets/js/usuario.js"></script>
+</body>
+</html>
